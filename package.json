@@ -2,7 +2,7 @@
   "name": "pokeapi",
   "private": true,
   "version": "0.0.0",
-  "homepage": "/pokeapi/#",
+  "homepage": "https://dantevicenzo.github.io/pokeapi/#",
   "type": "module",
   "scripts": {
     "dev": "vite",
