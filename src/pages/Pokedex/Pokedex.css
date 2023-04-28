@@ -1,3 +1,13 @@
 .pokedex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex: 1;
+    background-color: white;
+    padding: 12px 12%;
+    gap: 24px;
+}
+
+.pokedex h1 {
+    font-size: 35px;
 }

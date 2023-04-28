@@ -29,6 +29,10 @@ body, html, #root {
   flex-direction: column;
 }
 
+select, input {
+  font-family: 'Karla', sans-serif;
+}
+
 
 h1, h2, h3, h6, p {
   font-weight: 400;

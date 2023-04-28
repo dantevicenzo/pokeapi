@@ -2,7 +2,9 @@
 import teamRocketNotFound from '../../assets/teamRocketNotFound.png'
 import './NotFound.css'
 import ButtonBig from '../../components/ButtonBig/ButtonBig'
+import {Link} from 'react-router-dom';
 
+<Link to="/benefits">Benefits</Link>
 export default function NotFound() {
     return (
         <div className='notFoundContainer'>

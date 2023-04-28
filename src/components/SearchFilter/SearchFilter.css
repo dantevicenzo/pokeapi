@@ -1,0 +1,49 @@
+.multiselect {
+    width: 135px;
+    filter: drop-shadow(2px 2px 2px rgb(1, 28, 64, 0.1));
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    font-size: 16px;
+    width: 100%;
+    height: 1.5rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#checkboxes {
+    display: none;
+    margin-top: 9px;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: var(--white);
+    filter: drop-shadow(2px 2px 2px rgb(1, 28, 64, 0.1));
+}
+
+#checkboxes label {
+    padding: 6px;
+    font-size: 16px;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+}
+
+#checkboxes label:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
