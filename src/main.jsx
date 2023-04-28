@@ -13,7 +13,7 @@ import { createHashRouter, RouterProvider} from "react-router-dom";
 
 const router = createHashRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     errorElement: <NotFound />,
     children: [
@@ -22,15 +22,15 @@ const router = createHashRouter([
         element: <Home />
       },
       {
-        path: 'pokedex',
+        path: '/pokedex',
         element: <Pokedex />
       },
       {
-        path: 'legendaries',
+        path: '/legendaries',
         element: <Legendaries />
       },
       {
-        path: 'documentation',
+        path: '/documentation',
         element: <Documentation />
       },
     ]
