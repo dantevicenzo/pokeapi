@@ -1,39 +1,50 @@
+/* eslint-disable react/prop-types */
+import SearchFilterCheckBox from '../SearchFilterCheckBox/SearchFilterCheckBox';
 import './SearchFilter.css'
 
-var expanded = false;
+let expanded = false;
 
-function showCheckboxes() {
-  var checkboxes = document.getElementById("checkboxes");
-  if (!expanded) {
-    checkboxes.style.display = "block";
-    expanded = true;
-  } else {
-    checkboxes.style.display = "none";
-    expanded = false;
+function showCheckboxes(id) {
+    let clickedCheckboxes = document.getElementById("checkboxes" + id);
+    let clickedExpanded = clickedCheckboxes.style.display == "block";
+  
+    if (!expanded) {
+      clickedCheckboxes.style.display = "block";
+      expanded = true;
+    } else if (clickedExpanded){
+      //pegar todas as checkboxes
+      hideAllCheckboxes();
+      expanded = false;
+    } else {
+      hideAllCheckboxes();
+      clickedCheckboxes.style.display = "block";
+      expanded = true;
+    }
   }
-}
 
-export default function SearchFilter() {
+  function hideAllCheckboxes(){
+    let allCheckboxes = Array.from(document.querySelectorAll('.checkboxes'));
+    allCheckboxes.map( (checkboxes) => {
+      checkboxes.style.display = "none";
+    })
+  }
+
+export default function SearchFilter(props) {
+
+    const checkboxes = props.checkboxes.map((checkbox) =>
+        <SearchFilterCheckBox key={checkbox.id} id={checkbox.id} label={checkbox.label} />
+    );
+
   return (
-    <div>
-        <div className="multiselect">
-            <div className="selectBox" onClick={ showCheckboxes }>
-                <select>
-                    <option>Tipo</option>
-                </select>
-                <div className="overSelect"></div>
-            </div>
-            <div id="checkboxes">
-                <label htmlFor="one">
-                    <input type="checkbox" id="one" />Fire
-                </label>
-                <label htmlFor="two">
-                    <input type="checkbox" id="two" />Normal
-                </label>
-                <label htmlFor="three">
-                    <input type="checkbox" id="three" />Eletric
-                </label>
-            </div>
+    <div className="multiselect">
+        <div className="selectBox" onClick={ () => showCheckboxes(props.id) }>
+            <select>
+                <option>{props.filterName}</option>
+            </select>
+            <div className="overSelect"></div>
+        </div>
+        <div id={"checkboxes" + props.id}  className='checkboxes'>
+            {checkboxes}
         </div>
     </div>
   )
