@@ -8,7 +8,7 @@ export default function Home() {
         <div className='coverText'>
             <h1><strong>Find</strong> all your favorite <strong>Pokemon</strong></h1>
             <h2>You can know the type of Pokemon, its strengths, disadvantages and abilities</h2>
-            <ButtonBig href="pokedex" text="See pokemons" color="#73D677" />
+            <ButtonBig href="/#/pokedex" text="See pokemons" color="#73D677" />
         </div>
 
         <img src={ banner }></img>

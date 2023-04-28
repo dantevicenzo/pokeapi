@@ -9,30 +9,28 @@ import Pokedex from './pages/Pokedex/Pokedex'
 import Legendaries from './pages/Legendaries/Legendaries'
 import Documentation from './pages/Documentation/Documentation'
 import NotFound from './pages/NotFound/NotFound'
-import { createBrowserRouter, RouterProvider} from "react-router-dom";
+import { createHashRouter, RouterProvider} from "react-router-dom";
 
-const baseURL = "/pokeapi"
-
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
     errorElement: <NotFound />,
     children: [
       {
-        path: baseURL,
+        path: '/',
         element: <Home />
       },
       {
-        path: baseURL + "/pokedex",
+        path: 'pokedex',
         element: <Pokedex />
       },
       {
-        path: baseURL + "/legendaries",
+        path: 'legendaries',
         element: <Legendaries />
       },
       {
-        path: baseURL + "/documentation",
+        path: 'documentation',
         element: <Documentation />
       },
     ]
