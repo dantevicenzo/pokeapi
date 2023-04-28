@@ -7,10 +7,10 @@ export default function Home() {
         <div className='coverText'>
             <h1><strong>Find</strong> all your favorite <strong>Pokemon</strong></h1>
             <h2>You can know the type of Pokemon, its strengths, disadvantages and abilities</h2>
-            <button>See pokemons</button>
+            <button onClick={ () => location.href='/pokedex' }>See pokemons</button>
         </div>
 
-        <img src={banner}></img>
+        <img src={ banner }></img>
     </div>
   )
 }
