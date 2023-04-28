@@ -6,10 +6,10 @@ export default function Header() {
     <header>
         <img src={logo}></img>
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/#/pokedex">Pokédex</a></li>
-            <li><a href="/#/legendaries">Legendaries</a></li>
-            <li><a href="/#/documentation">Documentation</a></li>
+            <li><a href="/pokeapi/">Home</a></li>
+            <li><a href="/pokeapi/#/pokedex">Pokédex</a></li>
+            <li><a href="/pokeapi/#/legendaries">Legendaries</a></li>
+            <li><a href="/pokeapi/#/documentation">Documentation</a></li>
         </ul>    
     </header>
   )
