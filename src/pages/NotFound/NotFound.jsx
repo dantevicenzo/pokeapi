@@ -1,8 +1,7 @@
-
 import teamRocketNotFound from '../../assets/teamRocketNotFound.png'
 import './NotFound.css'
-import ButtonBig from '../../components/ButtonBig/ButtonBig'
 import {Link} from 'react-router-dom';
+import { Button } from '../../components/styled/ButtonBig.styled';
 
 <Link to="/benefits">Benefits</Link>
 export default function NotFound() {
@@ -10,7 +9,7 @@ export default function NotFound() {
         <div className='notFoundContainer'>
             <img src={teamRocketNotFound}></img>
             <div><span className='white'>The rocket team </span><span className='black'>has won this time.</span></div>
-            <ButtonBig href="/pokeapi/#/" text="Return" color="#F2CB07" />
+            <Button backgroundColor="#F2CB07" onClick={ () => location.href="/pokeapi/#/" }>Return</Button>
         </div>
     )
 }
