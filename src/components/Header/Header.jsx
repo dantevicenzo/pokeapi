@@ -6,10 +6,10 @@ export default function Header() {
     <div className="header">
         <img src={logo}></img>
         <ul>
-            <li><a href="*">Home</a></li>
-            <li><a href="*">Pokédex</a></li>
-            <li><a href="*">Legendaries</a></li>
-            <li><a href="*">Documentation</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pokédex</a></li>
+            <li><a href="#">Legendaries</a></li>
+            <li><a href="#">Documentation</a></li>
         </ul>    
     </div>
   )
