@@ -8,7 +8,7 @@ export default function NotFound() {
         <div className='notFoundContainer'>
             <img src={teamRocketNotFound}></img>
             <div><span className='white'>The rocket team </span><span className='black'>has won this time.</span></div>
-            <ButtonBig href="/" text="Return" color="#F2CB07" />
+            <ButtonBig href="/pokeapi/#/" text="Return" color="#F2CB07" />
         </div>
     )
 }
