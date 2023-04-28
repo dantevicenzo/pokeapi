@@ -1,5 +1,5 @@
 import './Home.css'
-import banner from '../../assets/banner.png'
+import banner from '../../assets/Banner-Home.png'
 import ButtonBig from '../../components/ButtonBig/ButtonBig'
 
 export default function Home() {
