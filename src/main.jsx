@@ -11,7 +11,7 @@ import Documentation from './pages/Documentation/Documentation'
 import NotFound from './pages/NotFound/NotFound'
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
 
-const baseURL = "/pokeapi"
+// const baseURL = "/pokeapi"
 
 const router = createBrowserRouter([
   {
@@ -20,19 +20,19 @@ const router = createBrowserRouter([
     errorElement: <NotFound />,
     children: [
       {
-        path: baseURL + "/",
+        path: "/",
         element: <Home />
       },
       {
-        path: baseURL + "/pokedex",
+        path: "pokedex",
         element: <Pokedex />
       },
       {
-        path: baseURL + "/legendaries",
+        path: "legendaries",
         element: <Legendaries />
       },
       {
-        path: baseURL + "/documentation",
+        path: "documentation",
         element: <Documentation />
       },
     ]
