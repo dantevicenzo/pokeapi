@@ -1,13 +1,14 @@
-import { Link } from "react-router-dom";
+
+import teamRocketNotFound from '../../assets/teamRocketNotFound.png'
+import './NotFound.css'
+import ButtonBig from '../../components/ButtonBig/ButtonBig'
 
 export default function NotFound() {
     return (
-        <div>
-            <h1>Oops! You seem to be lost.</h1>
-            <p>Here are some helpful links:</p>
-            <Link to='/'>Home</Link>
-            <Link to='/blog'>Blog</Link>
-        <Link to='/contact'>Contact</Link>
+        <div className='notFoundContainer'>
+            <img src={teamRocketNotFound}></img>
+            <div><span className='white'>The rocket team </span><span className='black'>has won this time.</span></div>
+            <ButtonBig href="/" text="Return" color="#F2CB07" />
         </div>
     )
 }

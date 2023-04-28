@@ -1,7 +1,8 @@
+import './Legendaries.css'
 
 export default function Legendaries() {
   return (
-    <div>
+    <div className="legendaries">
       <h1>
         Legendaries
       </h1> 

@@ -1,0 +1,25 @@
+.notFoundContainer {
+    padding: 3% 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--danger);
+    justify-content: space-between;
+}
+
+.notFoundContainer img {
+    width: 80%;
+}
+
+.notFoundContainer span {
+    font-size: 48px;
+}
+
+.white {
+    color: var(--white);
+}
+
+.black {
+    color: black;
+}
