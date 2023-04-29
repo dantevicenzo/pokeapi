@@ -10,6 +10,8 @@ import Legendaries from './pages/Legendaries/Legendaries'
 import Documentation from './pages/Documentation/Documentation'
 import NotFound from './pages/NotFound/NotFound'
 import { createHashRouter, RouterProvider} from "react-router-dom";
+import { ThemeProvider } from 'styled-components'
+import theme from './Theme/Theme.jsx'
 
 const router = createHashRouter([
   {
@@ -38,7 +40,9 @@ const router = createHashRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={ router } />
-  </React.StrictMode>,
+  <ThemeProvider theme={ theme }>
+    <React.StrictMode>
+      <RouterProvider router={ router } />
+    </React.StrictMode>
+  </ThemeProvider>,
 )

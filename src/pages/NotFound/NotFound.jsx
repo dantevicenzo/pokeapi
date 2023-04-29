@@ -1,15 +1,16 @@
 import teamRocketNotFound from '../../assets/teamRocketNotFound.png'
-import './NotFound.css'
-import {Link} from 'react-router-dom';
-import { Button } from '../../components/styled/ButtonBig.styled';
+import { Button, NotFoundContainer } from '../../components/styled/styled';
+import { useTheme } from 'styled-components';
 
-<Link to="/benefits">Benefits</Link>
 export default function NotFound() {
+
+    const { colors } = useTheme();
+
     return (
-        <div className='notFoundContainer'>
-            <img src={teamRocketNotFound}></img>
-            <div><span className='white'>The rocket team </span><span className='black'>has won this time.</span></div>
-            <Button backgroundColor="#F2CB07" onClick={ () => location.href="/pokeapi/#/" }>Return</Button>
-        </div>
+        <NotFoundContainer>
+            <img src={ teamRocketNotFound }></img>
+            <div><span style={{ color: colors.grey }}>The rocket team </span><span>has won this time.</span></div>
+            <Button backgroundColor={ colors.primary } onClick={ () => location.href="/pokeapi/#/" }>Return</Button>
+        </NotFoundContainer>
     )
 }

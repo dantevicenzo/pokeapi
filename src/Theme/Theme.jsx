@@ -4,6 +4,7 @@ const Theme = {
         primary: '#F2B807',
         second: '#F28F16',
         danger: '#D93E30',
+        green: '#73D677',
         grey: '#F6F7F9',
         pharagraph: '#212121',
         whiteLight: '#FDFDFD',

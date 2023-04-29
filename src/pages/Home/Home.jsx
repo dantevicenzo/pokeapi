@@ -1,17 +1,20 @@
-import './Home.css'
 import banner from '../../assets/Banner-Home.png'
-import { Button } from '../../components/styled/ButtonBig.styled'
+import { Button, Main, ImgBanner } from '../../components/styled/styled'
+import { useTheme } from 'styled-components'
 
 export default function Home() {
+
+  const { colors } = useTheme();
+
   return (
-    <div className='home'>
-        <div className='coverText'>
+    <Main>
+        <div>
             <h1><strong>Find</strong> all your favorite <strong>Pokemon</strong></h1>
             <h2>You can know the type of Pokemon, its strengths, disadvantages and abilities</h2>
-            <Button backgroundColor="#73D677" onClick={ () => location.href="/pokeapi/#/pokedex" }>See pokemons</Button>
+            <Button backgroundColor={ colors.green } onClick={ () => location.href="/pokeapi/#/pokedex" }>See pokemons</Button>
         </div>
 
-        <img src={ banner }></img>
-    </div>
+        <ImgBanner src={ banner }></ImgBanner>
+    </Main>
   )
 }

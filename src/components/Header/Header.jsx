@@ -1,9 +1,9 @@
-import "./Header.css"
+import { Header as StyledHeader } from '../styled/styled'
 import logo from "../../assets/Logo.png"
 
 export default function Header() {
   return (
-    <header>
+    <StyledHeader>
         <img src={logo}></img>
         <ul>
             <li><a href="/pokeapi/#/">Home</a></li>
@@ -11,6 +11,6 @@ export default function Header() {
             <li><a href="/pokeapi/#/legendaries">Legendaries</a></li>
             <li><a href="/pokeapi/#/documentation">Documentation</a></li>
         </ul>    
-    </header>
+    </StyledHeader>
   )
 }
