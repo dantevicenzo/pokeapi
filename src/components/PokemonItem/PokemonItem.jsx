@@ -1,24 +1,25 @@
+/* eslint-disable react/prop-types */
 import pokemonImage from '../../assets/PokemonImgTest.png'
 import { PokemonItemContainer, PokemonItemInfoContainer, PokemonItemTitle, PokemonItemPropsContainer, PokemonItemPropContainer, PokemonItemPropValue, PokemonItemPropTitle, PokemonItemTagsContainer, PokemonItemTag, PokemonItemImageContainer, PokemonItemImg } from "../styled/styled"
 
-export default function PokemonItem() {
+export default function PokemonItem(props) {
   return (
-    <PokemonItemContainer backgroundColor="#D93E30">
+    <PokemonItemContainer backgroundColor={ props.pokemonItem.backgroundColor }>
         <PokemonItemInfoContainer>
-            <PokemonItemTitle>Pyroar</PokemonItemTitle>
+            <PokemonItemTitle>{ props.pokemonItem.name }</PokemonItemTitle>
             <PokemonItemPropsContainer>
                 <PokemonItemPropContainer>
-                    <PokemonItemPropValue>419</PokemonItemPropValue>
+                    <PokemonItemPropValue>{ props.pokemonItem.attack }</PokemonItemPropValue>
                     <PokemonItemPropTitle>Attack</PokemonItemPropTitle>
                 </PokemonItemPropContainer>
                 <PokemonItemPropContainer>
-                    <PokemonItemPropValue>49</PokemonItemPropValue>
+                    <PokemonItemPropValue>{ props.pokemonItem.defense }</PokemonItemPropValue>
                     <PokemonItemPropTitle>Deffense</PokemonItemPropTitle>
                 </PokemonItemPropContainer>
             </PokemonItemPropsContainer>
             <PokemonItemTagsContainer>
-                <PokemonItemTag backgroundColor="#73D677">Grass</PokemonItemTag>
-                <PokemonItemTag backgroundColor="#07D6F2">Poison</PokemonItemTag>
+                <PokemonItemTag backgroundColor={ props.pokemonItem.tag1.color }>{ props.pokemonItem.tag1.name }</PokemonItemTag>
+                <PokemonItemTag backgroundColor={ props.pokemonItem.tag2.color }>{ props.pokemonItem.tag2.name }</PokemonItemTag>
             </PokemonItemTagsContainer>
         </PokemonItemInfoContainer>
         <PokemonItemImageContainer>

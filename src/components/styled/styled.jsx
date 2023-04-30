@@ -106,8 +106,8 @@ export const NotFoundContainer = styled.div`
 // Pokedex
 
 export const PokemonItemContainer = styled.div`
-    /* height: 135px; */
-    /* width: 350px; */
+    flex-grow: 1;
+	width: 24%;
     background: linear-gradient(
         to right,
         ${ (props) => props.theme.colors.grey } 0%,
@@ -174,7 +174,13 @@ export const PokemonItemImageContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 `
 export const PokemonItemImg = styled.img`
-    height: 100%;
+    object-fit: contain;
+`
+export const PokemonListContainer = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 `
