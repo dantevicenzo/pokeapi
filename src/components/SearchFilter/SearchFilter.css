@@ -33,6 +33,7 @@
     padding: 12px;
     background-color: var(--white);
     filter: drop-shadow(2px 2px 2px rgb(1, 28, 64, 0.1));
+    position: absolute;
 }
 
 .checkboxes label {

@@ -33,7 +33,7 @@ declare module 'styled-components' {
       big: string,
       small: string,
   },
-  effectStyles: {
+  boxShadowStyles: {
       blur24: string,
       blur20: string,
       blur16: string,
