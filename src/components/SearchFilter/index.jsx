@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import SearchFilterCheckBox from '../SearchFilterCheckBox/SearchFilterCheckBox';
+import SearchFilterCheckBox from '../SearchFilterCheckBox';
 import './SearchFilter.css'
 
 let expanded = false;

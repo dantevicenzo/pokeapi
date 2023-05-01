@@ -4,11 +4,11 @@ import './index.css'
 
 import App from './App'
 
-import Home from './pages/Home/Home.jsx'
-import Pokedex from './pages/Pokedex/Pokedex'
-import Legendaries from './pages/Legendaries/Legendaries'
-import Documentation from './pages/Documentation/Documentation'
-import NotFound from './pages/NotFound/NotFound'
+import Home from './pages/Home/index.jsx'
+import Pokedex from './pages/Pokedex'
+import Legendaries from './pages/Legendaries'
+import Documentation from './pages/Documentation'
+import NotFound from './pages/NotFound'
 import { createHashRouter, RouterProvider} from "react-router-dom";
 import { ThemeProvider } from 'styled-components'
 import theme from './Theme/Theme.jsx'

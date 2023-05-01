@@ -1,5 +1,6 @@
 import banner from '../../assets/Banner-Home.png'
-import { Button, Main, ImgBanner } from '../../components/styled/styled'
+import { Button } from '../../components/Button/style'
+import { Main, ImgBanner } from './style'
 import { useTheme } from 'styled-components'
 
 export default function Home() {

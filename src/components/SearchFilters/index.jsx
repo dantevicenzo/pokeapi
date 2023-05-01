@@ -1,4 +1,4 @@
-import SearchFilter from '../SearchFilter/SearchFilter';
+import SearchFilter from '../SearchFilter';
 import './SearchFilters.css';
 
 const typeCheckboxes = [

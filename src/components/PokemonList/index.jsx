@@ -1,5 +1,5 @@
-import PokemonItem from "../PokemonItem/PokemonItem";
-import { PokemonListContainer } from "../styled/styled";
+import PokemonItem from "../PokemonItem";
+import { Container } from "./style";
 
 const pokemonItem = {
     name: 'Pyroar',
@@ -21,13 +21,13 @@ const pokemonItem = {
 
 export default function PokemonList() {
   return (
-    <PokemonListContainer>
+    <Container>
         <PokemonItem pokemonItem = { pokemonItem }/>
         <PokemonItem pokemonItem = { pokemonItem }/>
         <PokemonItem pokemonItem = { pokemonItem }/>
         <PokemonItem pokemonItem = { pokemonItem }/>
         <PokemonItem pokemonItem = { pokemonItem }/>
         <PokemonItem pokemonItem = { pokemonItem }/>
-    </PokemonListContainer>
+    </Container>
   )
 }

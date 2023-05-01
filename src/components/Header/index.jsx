@@ -1,4 +1,4 @@
-import { Header as StyledHeader } from '../styled/styled'
+import { Header as StyledHeader } from './style'
 import logo from "../../assets/Logo.png"
 
 export default function Header() {
